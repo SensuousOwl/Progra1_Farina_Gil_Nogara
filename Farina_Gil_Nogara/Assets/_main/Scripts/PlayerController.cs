@@ -16,22 +16,26 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += transform.right * speed * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0,0,270);
+            transform.position += transform.up * speed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= transform.right * speed * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0,0,90);
+            transform.position += transform.up * speed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.W))
         {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
             transform.position += transform.up * speed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= transform.up * speed * Time.deltaTime;
+            transform.rotation = Quaternion.Euler(0,0,180);
+            transform.position += transform.up * speed * Time.deltaTime;
         }
     }
 }
