@@ -885,8 +885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1986892223}
-  speed: 5
-  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!1001 &737083081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,8 +1618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1844859769}
-  speed: 5
-  moveDirection: {x: -15, y: 0, z: 0}
 --- !u!1 &1511542026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2005,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1466048981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1844859771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844859769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5420b7edb13ed6a40b6ab12924ba1440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1863005654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8376148138384655150, guid: d37b6517e44ca974cab68b0d710a4088,
