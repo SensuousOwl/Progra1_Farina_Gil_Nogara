@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class EvilRobotController : MonoBehaviour
 {
-    float dirX, moveSpeed = 3f;
+    [SerializeField] float dirX, moveSpeed = 3f;
     bool moveRight = true;
+    [SerializeField] float xPosition = 4f;
+    [SerializeField] private GameObject electricityTrigger;
 
     private void Update()
     {
-        if (transform.position.x > 4f)
+        if (transform.position.x > xPosition)
             moveRight = false;
-        if (transform.position.x < -4f)
+        if (transform.position.x < -xPosition)
             moveRight = true;
 
         if (moveRight)
