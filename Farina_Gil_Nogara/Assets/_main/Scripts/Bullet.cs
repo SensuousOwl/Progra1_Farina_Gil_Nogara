@@ -5,14 +5,14 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float speed = 10;
-    [SerializeField] private float deadTime = 5f;
+    [SerializeField] private float deadTime = 0.5f;
     [SerializeField] private int damage = 10;
 
     private float currentDeadTime;
 
     private void Update()
     {
-        transform.position += transform.right * speed * Time.deltaTime;
+        transform.position += transform.up * speed * Time.deltaTime;
 
         currentDeadTime += Time.deltaTime;
 
@@ -37,5 +37,6 @@ public class Bullet : MonoBehaviour
         }
 
         Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
