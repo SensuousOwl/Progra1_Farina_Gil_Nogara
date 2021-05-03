@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement; //Esto utiliza las funciones del administrado
 public class NXTLVL : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        FinishStateSequence();
+    }
+
     private void FinishStateSequence()   
     { 
         Invoke("LoadNextScene", levelLoadDelay); //Esta funcion invoca a la funcion que carga al proximo nivel y le proporciona un delay asignado desde el editor.
@@ -21,22 +26,5 @@ public class NXTLVL : MonoBehaviour
             nextSceneIndex = 0;
         }
         SceneManager.LoadScene(nextSceneIndex);
-    }
-
-    void Start()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        FinishStateSequence();
-    }
-    
-        
-    void Update()
-    {
-        
-
     }
 }

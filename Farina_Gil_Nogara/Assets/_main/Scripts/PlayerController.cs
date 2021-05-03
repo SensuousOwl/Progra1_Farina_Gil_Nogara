@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private string playerName = "Default";
     [SerializeField] private float speed = 10;
     [SerializeField] private float zRotation;
 
