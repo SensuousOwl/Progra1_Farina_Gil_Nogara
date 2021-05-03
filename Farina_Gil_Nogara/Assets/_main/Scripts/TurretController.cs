@@ -25,19 +25,22 @@ public class TurretController : MonoBehaviour
 
         if (currentRotationTimer > rotationTimer)
         {
-            transform.eulerAngles = new Vector3(0, 0, Time.realtimeSinceStartup * 90);
+            //transform.eulerAngles = new Vector3(0, 0, Time.realtimeSinceStartup * 90);
             //nextAngle += 90;
+            transform.Rotate(new Vector3(0, 0, 90));
+            currentRotationTimer = 0;
+            Shoot();
         }
         
         
         
-        currentCooldown -= Time.deltaTime;
+        /*currentCooldown -= Time.deltaTime;
 
         if (currentCooldown <= 0)
         {
             ResetCooldown();
             Shoot();
-        }
+        }*/
 
     }
 

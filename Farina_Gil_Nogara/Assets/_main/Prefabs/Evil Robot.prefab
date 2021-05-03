@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2737488236646098884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.565, y: -0.04354, z: -2.6940918}
+  m_LocalPosition: {x: 0.565, y: -0.04354, z: 0}
   m_LocalScale: {x: 1, y: 0.975, z: 1}
   m_Children: []
   m_Father: {fileID: 8948005378424270481}
@@ -221,7 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirX: 0
   moveSpeed: 3
-  xPosition: 4
+  xMax: 6.8
+  xMin: -2.4
   electricityTrigger: {fileID: 2737488236646098884}
 --- !u!61 &830113166
 BoxCollider2D:

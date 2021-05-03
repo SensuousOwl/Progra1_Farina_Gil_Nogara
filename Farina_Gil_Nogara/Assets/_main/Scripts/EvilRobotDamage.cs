@@ -19,7 +19,5 @@ public class EvilRobotDamage : MonoBehaviour
         {
             healthController.GetDamage(damage);
         }
-
-        Destroy(gameObject);
     }
 }

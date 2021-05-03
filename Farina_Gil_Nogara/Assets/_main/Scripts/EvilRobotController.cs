@@ -6,26 +6,29 @@ public class EvilRobotController : MonoBehaviour
 {
     [SerializeField] float dirX, moveSpeed = 3f;
     bool moveRight = true;
-    [SerializeField] float xPosition = 4f;
+    [SerializeField] float xMax = 4f;
+    [SerializeField] float xMin = 4f;
     [SerializeField] private GameObject electricityTrigger;
 
     private void Update()
     {
-        if (transform.position.x > xPosition)
+        if (transform.position.x > xMax)
             moveRight = false;
-        if (transform.position.x < -xPosition)
+        if (transform.position.x < xMin)
             moveRight = true;
 
         if (moveRight)
         {
-            transform.position = new Vector2(transform.position.x + moveSpeed * Time.deltaTime, transform.position.y);
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.position += transform.right *moveSpeed* Time.deltaTime;
+            
         }
             
         else
         {
-            transform.position = new Vector2(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y);
-            transform.rotation = Quaternion.Euler(0, 0, 180);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.position += transform.right * moveSpeed* Time.deltaTime;
+            
         }
 
 
