@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: 25617b66dab0b3342bf3e7c069fa3f14
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3167506641361616635
+    second: Joe Walking Animation_0
+  - first:
+      213: 3231290111082362323
+    second: Joe Walking Animation_1
+  - first:
+      213: 444948202437140669
+    second: Joe Walking Animation_2
+  - first:
+      213: 6361304492417307775
+    second: Joe Walking Animation_3
+  - first:
+      213: 4694123621159910794
+    second: Joe Walking Animation_4
+  - first:
+      213: -8605092277518324154
+    second: Joe Walking Animation_5
+  - first:
+      213: -950825072192261461
+    second: Joe Walking Animation_6
+  - first:
+      213: 6496617900639468609
+    second: Joe Walking Animation_7
+  - first:
+      213: 5001112281723704021
+    second: Joe Walking Animation_8
+  - first:
+      213: -5668615761099577164
+    second: Joe Walking Animation_9
+  - first:
+      213: -1434941534942556875
+    second: Joe Walking Animation_10
+  - first:
+      213: 59585603340535797
+    second: Joe Walking Animation_11
+  - first:
+      213: 3165726948021623211
+    second: Joe Walking Animation_12
+  - first:
+      213: 3242095167275904134
+    second: Joe Walking Animation_13
+  - first:
+      213: -6803126834210897511
+    second: Joe Walking Animation_14
+  - first:
+      213: 5696299796137566027
+    second: Joe Walking Animation_15
+  - first:
+      213: 7019333733325518337
+    second: Joe Walking Animation_16
+  - first:
+      213: -9146211271077080986
+    second: Joe Walking Animation_17
+  - first:
+      213: -4096257298933193771
+    second: Joe Walking Animation_18
+  - first:
+      213: -2452363174307753625
+    second: Joe Walking Animation_19
+  - first:
+      213: -7409088151189336599
+    second: Joe Walking Animation_20
+  - first:
+      213: -7885546815205359140
+    second: Joe Walking Animation_21
+  - first:
+      213: -328294102588373991
+    second: Joe Walking Animation_22
+  - first:
+      213: -2369347486500784888
+    second: Joe Walking Animation_23
+  - first:
+      213: -500786108384253474
+    second: Joe Walking Animation_24
+  - first:
+      213: 7309012255734309405
+    second: Joe Walking Animation_25
+  - first:
+      213: 3114462350882903164
+    second: Joe Walking Animation_26
+  - first:
+      213: 120745667329967903
+    second: Joe Walking Animation_27
+  - first:
+      213: -7517024814438470521
+    second: Joe Walking Animation_28
+  - first:
+      213: 9189260382237136345
+    second: Joe Walking Animation_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +130,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +161,723 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Joe Walking Animation_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 427
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50143f9ed71ca04d0800000000000000
+      internalID: -3167506641361616635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 425
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5fb456c39d7dc20800000000000000
+      internalID: 3231290111082362323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 424
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0e6bd5806cc2600800000000000000
+      internalID: 444948202437140669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 421
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7451a27bb4e74850800000000000000
+      internalID: 6361304492417307775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 420
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8db10b1090e42140800000000000000
+      internalID: 4694123621159910794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 421
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e20135a22949880800000000000000
+      internalID: -8605092277518324154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_6
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 423
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2f17072adfdc2f0800000000000000
+      internalID: -950825072192261461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 424
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c3f016f8f982a50800000000000000
+      internalID: 6496617900639468609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_8
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 425
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d21cf98f15876540800000000000000
+      internalID: 5001112281723704021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 334
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8aa77bff70551b0800000000000000
+      internalID: -5668615761099577164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 333
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d8b40d640161ce0800000000000000
+      internalID: -1434941534942556875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_11
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 332
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f707d06ac0b3d000800000000000000
+      internalID: 59585603340535797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 331
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9d5b0f2ebeeeb20800000000000000
+      internalID: 3165726948021623211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 330
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cad75906c3efc20800000000000000
+      internalID: 3242095167275904134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 329
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9918ee450307691a0800000000000000
+      internalID: -6803126834210897511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_15
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 330
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fd8eafb725d0f40800000000000000
+      internalID: 5696299796137566027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_16
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 331
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106b8c627dea96160800000000000000
+      internalID: 7019333733325518337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_17
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 332
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660d6c2ce41221180800000000000000
+      internalID: -9146211271077080986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 242
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d36c7480bb2727c0800000000000000
+      internalID: -4096257298933193771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_19
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 243
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7611327afa477fdd0800000000000000
+      internalID: -2452363174307753625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_20
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 241
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edcdced491ad2990800000000000000
+      internalID: -7409088151189336599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_21
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 240
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1c8f373f8e09290800000000000000
+      internalID: -7885546815205359140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 238
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9144d59c04aa17bf0800000000000000
+      internalID: -328294102588373991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_23
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 236
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805f7ada3036e1fd0800000000000000
+      internalID: -2369347486500784888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_24
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 235
+        width: 71
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed96e4d00b9dc09f0800000000000000
+      internalID: -500786108384253474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_25
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 236
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12250afbe3de6560800000000000000
+      internalID: 7309012255734309405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_26
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 238
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7414bac10bc83b20800000000000000
+      internalID: 3114462350882903164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_27
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 146
+        width: 72
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17ce517b89fca100800000000000000
+      internalID: 120745667329967903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 147
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c299712c92ea790800000000000000
+      internalID: -7517024814438470521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joe Walking Animation_29
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 149
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d590df71afc68f70800000000000000
+      internalID: 9189260382237136345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
