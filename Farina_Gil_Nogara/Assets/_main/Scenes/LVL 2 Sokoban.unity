@@ -2748,10 +2748,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1458087236}
     m_Modifications:
+    - target: {fileID: 790283743720398555, guid: 1ef395e0723d85c458bbb228333b67eb,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790283743720398555, guid: 1ef395e0723d85c458bbb228333b67eb,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2446278467098649320, guid: 1ef395e0723d85c458bbb228333b67eb,
         type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779391492173197437, guid: 1ef395e0723d85c458bbb228333b67eb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 02f78bb62f0f3b44aa0c96954ddd49f8,
+        type: 3}
+    - target: {fileID: 5779391492173197437, guid: 1ef395e0723d85c458bbb228333b67eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8398741899738516705, guid: 1ef395e0723d85c458bbb228333b67eb,
         type: 3}
