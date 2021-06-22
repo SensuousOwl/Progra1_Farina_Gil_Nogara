@@ -39,4 +39,21 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
         Destroy(this.gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+
+        if (healthController == null)
+        {
+            healthController = collision.gameObject.GetComponentInParent<HealthController>();
+        }
+
+        if (healthController != null)
+        {
+            healthController.GetDamage(damage);
+        }
+
+        Destroy(this.gameObject);
+    }
 }
