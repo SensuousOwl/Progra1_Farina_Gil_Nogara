@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
-    //[SerializeField] private GameObject door;
-    
+    [SerializeField] private GameObject door;
 
     //Esto es lo que pasa cuando el player interactua con las llaves del nivel.
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        //BroadcastMessage("AddToList");
         Destroy(this.gameObject);
         Destroy(door.gameObject);
     }

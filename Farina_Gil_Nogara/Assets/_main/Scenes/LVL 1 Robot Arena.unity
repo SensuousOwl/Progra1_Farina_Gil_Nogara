@@ -347,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323924372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.59829, y: -4.9397125, z: -5.112636}
+  m_LocalPosition: {x: -4.663554, y: -4.9397125, z: -5.112636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1048122409}
@@ -1783,7 +1783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.59829, y: -4.9397125, z: -5.112636}
+  m_LocalPosition: {x: -4.663554, y: -4.9397125, z: -5.112636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3872,6 +3872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1936046864953593700, guid: f7cccd841175c6749a9aa7b878c553d5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4100668496789017171, guid: f7cccd841175c6749a9aa7b878c553d5,
         type: 3}
       propertyPath: m_Color.b
@@ -4113,7 +4118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1565620896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4353,7 +4358,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844859769}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5420b7edb13ed6a40b6ab12924ba1440, type: 3}
   m_Name: 
@@ -5351,6 +5356,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1936046864953593700, guid: f7cccd841175c6749a9aa7b878c553d5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4100668496789017171, guid: f7cccd841175c6749a9aa7b878c553d5,
         type: 3}
       propertyPath: m_SortingLayer
@@ -5517,6 +5527,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304798976361483246, guid: d0a9080ed6451f24a856e9673247cd11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9161575798637843340, guid: d0a9080ed6451f24a856e9673247cd11,
         type: 3}

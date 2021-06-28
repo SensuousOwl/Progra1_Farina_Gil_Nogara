@@ -5,8 +5,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 10;
     [SerializeField] private float zRotation;
+    [SerializeField] private float boostForce = 5;
 
     private Animator myAnimator;
+    private Rigidbody2D myRigidbody;
 
     private void Awake()
     {
@@ -17,11 +19,16 @@ public class PlayerController : MonoBehaviour
             Debug.LogError("Missing Animator Component.");
         }
 
-
+        myRigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            myRigidbody.AddForce(transform.up * boostForce, ForceMode2D.Impulse);
+        }
+        
         if (Input.GetKey(KeyCode.D))
         {
             myAnimator.SetBool("IsWalking", true);
