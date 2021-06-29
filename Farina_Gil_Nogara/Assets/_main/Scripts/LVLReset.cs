@@ -6,8 +6,18 @@ using UnityEngine.SceneManagement;
 public class LVLReset : MonoBehaviour
 {
     [SerializeField] float levelResetDelay = .25f;
+    [SerializeField] PlayerController playerController;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    
+    private void Awake()
+    {
+        playerController.OnDead.AddListener(OnPlayerDeadHandler);
+    }
+
+
+ 
+    private void OnPlayerDeadHandler()
     {
         LvlResetSequence();
     }

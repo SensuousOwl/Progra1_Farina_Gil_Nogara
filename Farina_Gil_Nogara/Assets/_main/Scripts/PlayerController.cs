@@ -1,5 +1,7 @@
 ﻿
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,8 +9,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float zRotation;
     [SerializeField] private float boostForce = 5;
 
+    public UnityEvent OnDead = new UnityEvent();
+
     private Animator myAnimator;
     private Rigidbody2D myRigidbody;
+    private HealthController myHealthController;
 
     private void Awake()
     {
@@ -20,6 +25,14 @@ public class PlayerController : MonoBehaviour
         }
 
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+
+        myHealthController = gameObject.GetComponent<HealthController>();
+        myHealthController.OnDead.AddListener(OnDeadHandler);
+    }
+
+    private void OnDeadHandler()
+    {
+        OnDead.Invoke();
     }
 
     private void Update()

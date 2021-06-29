@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
-    [SerializeField] private float levelResetDelay = .25f;
 
     public UnityEvent OnHealthChange = new UnityEvent();
+    public UnityEvent OnDead = new UnityEvent();
 
     private int currentHealth;
 
@@ -35,7 +34,6 @@ public class HealthController : MonoBehaviour
                 currentHealth = 0;
                 OnHealthChange.Invoke();
                 Kill();
-                LevelRestart();
             }
             else
             {
@@ -63,16 +61,9 @@ public class HealthController : MonoBehaviour
 
     private void Kill()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
+        OnDead.Invoke();
     }
 
-    private void LevelRestart()
-    {
-        Invoke("ResetScene", levelResetDelay);
-    }
-
-    void ResetScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    
 }
