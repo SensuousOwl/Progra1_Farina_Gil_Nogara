@@ -5,7 +5,7 @@ using UnityEngine;
 public class EvilRobotController : MonoBehaviour
 {
     [SerializeField] float dirX, moveSpeed = 3f;
-    bool moveRight = true;
+    //bool moveRight = true;
     [SerializeField] float xMax = 4f;
     [SerializeField] float xMin = 4f;
     [SerializeField] private GameObject electricityTrigger;
