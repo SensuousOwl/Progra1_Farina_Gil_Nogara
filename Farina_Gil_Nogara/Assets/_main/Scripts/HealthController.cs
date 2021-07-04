@@ -61,7 +61,7 @@ public class HealthController : MonoBehaviour
 
     private void Kill()
     {
-        //Destroy(this.gameObject);
+        //Destroy(gameObject);
         OnDead.Invoke();
     }
 

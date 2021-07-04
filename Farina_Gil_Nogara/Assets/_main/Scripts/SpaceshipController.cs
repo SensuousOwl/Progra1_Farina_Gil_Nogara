@@ -6,6 +6,12 @@ using UnityEngine;
 public class SpaceshipController : MonoBehaviour
 {
     [SerializeField] private float speed = 10;
+    [SerializeField] private GameObject laserPrefab;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private float shootCooldown = 0.5f;
+
+    private float currentCooldown;
+
 
 
 
@@ -13,7 +19,7 @@ public class SpaceshipController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ResetCooldown();
     }
 
     // Update is called once per frame
@@ -28,5 +34,47 @@ public class SpaceshipController : MonoBehaviour
         {
             transform.position -= transform.up * speed * Time.deltaTime;
         }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += transform.right * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position -= transform.right * speed * Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shoot();
+        }
+
+        /*if (List = true)
+        {
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.position += transform.right * speed * Time.deltaTime;
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.position -= transform.right * speed * Time.deltaTime;
+            }
+
+            
+        }*/
+    }
+
+    private void ResetCooldown()
+    {
+        currentCooldown = shootCooldown;
+    }
+
+    private void Shoot()
+    {
+        GameObject laser = Instantiate(laserPrefab);
+        laser.transform.position = shootPoint.position;
+        //laser.transform.rotation = transform.rotation;
     }
 }
