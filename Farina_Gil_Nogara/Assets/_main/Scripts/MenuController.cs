@@ -19,7 +19,7 @@ public class MenuController : MonoBehaviour
 
     private void OnClickPlay()
     {
-        SceneManager.LoadScene("LVL 1 Robot Arena");
+        SceneManager.LoadScene("World 1");
     }
     private void OnClickOptions()
     {
