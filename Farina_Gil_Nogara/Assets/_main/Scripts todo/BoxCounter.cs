@@ -9,7 +9,7 @@ public class BoxCounter : MonoBehaviour
     [SerializeField] private BoxLVLManager levelManager;
 
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Box"))
         {
@@ -20,5 +20,5 @@ public class BoxCounter : MonoBehaviour
     private void Update()
     {
         
-    }
+    }*/
 }

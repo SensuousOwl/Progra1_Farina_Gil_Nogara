@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class BoxLVLManager : MonoBehaviour
 {
-    private int currentBoxes = 0;
+    /*private int currentBoxes = 0;
 
     public void AddBox()
     {
@@ -14,10 +16,17 @@ public class BoxLVLManager : MonoBehaviour
     public void Victory()
     {
         
+    }*/
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            LevelReset();
+        }
     }
 
     public void LevelReset()
     {
-        // TODO: resetear el nivel
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

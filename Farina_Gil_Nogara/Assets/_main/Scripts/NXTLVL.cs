@@ -19,12 +19,6 @@ public class NXTLVL : MonoBehaviour
 
     void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; //busca en que escena estamos.
-        int nextSceneIndex = currentSceneIndex + 1; //prepara al SceneManager para pasar a la escena que sigue.
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings) //este if verifica que si nos encontramos en la ultima escena, que el juego vuelva al primer nivel.
-        {
-            nextSceneIndex = 0;
-        }
-        SceneManager.LoadScene(nextSceneIndex);
+        SceneManager.LoadScene("World 1");
     }
 }
