@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8349864510687168159
+--- !u!1 &4322017797330803527
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 615574972692167959}
-  - component: {fileID: 7240929670865933363}
+  - component: {fileID: 3271164618325808138}
+  - component: {fileID: 5245795647828790230}
   m_Layer: 0
-  m_Name: SpaceLevelManager
+  m_Name: WinTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &615574972692167959
+--- !u!4 &3271164618325808138
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8349864510687168159}
+  m_GameObject: {fileID: 4322017797330803527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.0564394, y: -0.26816517, z: -759.9988}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,19 +31,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7240929670865933363
+--- !u!114 &5245795647828790230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8349864510687168159}
+  m_GameObject: {fileID: 4322017797330803527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfb38521dd95b874281180097886fd09, type: 3}
+  m_Script: {fileID: 11500000, guid: d085e4b4f81949a40982f35be4fda23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpaceshipController: {fileID: 0}
-  levelResetDelay: 0.25
-  levelLoadDelay: 2
-  nextWorld: World 2
+  levelManager: {fileID: 0}
+  timeRemaining: 10
+  timerIsRunning: 0
