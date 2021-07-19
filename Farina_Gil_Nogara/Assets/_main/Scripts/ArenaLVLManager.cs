@@ -9,7 +9,7 @@ public class ArenaLVLManager : MonoBehaviour
     [SerializeField] private RobotController playerRobotController;
     [SerializeField] float levelResetDelay = .25f;
     [SerializeField] float levelLoadDelay = 2f;
-
+    [SerializeField] private string nextWorld;
 
     GameManager gameManager;
     
@@ -29,7 +29,7 @@ public class ArenaLVLManager : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene("World 1");
+        SceneManager.LoadScene(nextWorld);
     }
 
 
