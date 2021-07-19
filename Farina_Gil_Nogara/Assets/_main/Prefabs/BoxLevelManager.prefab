@@ -43,3 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9825ba464c255694d838ee7900f015a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: Space Voyage LVL 1
