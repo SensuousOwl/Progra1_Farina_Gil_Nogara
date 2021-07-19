@@ -12,19 +12,12 @@ public class RobotController : MonoBehaviour
 
     public UnityEvent OnDead = new UnityEvent();
 
-    private Animator myAnimator;
+    
     private Rigidbody2D myRigidbody;
     private HealthController myHealthController;
 
     private void Awake()
     {
-        myAnimator = gameObject.GetComponent<Animator>();
-
-        if (myAnimator == null)
-        {
-            Debug.LogError("Missing Animator Component.");
-        }
-
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
 
         myHealthController = gameObject.GetComponent<HealthController>();
@@ -45,35 +38,26 @@ public class RobotController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            myAnimator.SetBool("IsWalking", true);
             transform.rotation = Quaternion.Euler(0, 0, 270);
             transform.position += transform.up * speed * Time.deltaTime;
         }
 
         else if (Input.GetKey(KeyCode.A))
         {
-            myAnimator.SetBool("IsWalking", true);
             transform.rotation = Quaternion.Euler(0, 0, 90);
             transform.position += transform.up * speed * Time.deltaTime;
         }
 
         else if (Input.GetKey(KeyCode.W))
         {
-            myAnimator.SetBool("IsWalking", true);
             transform.rotation = Quaternion.Euler(0, 0, 0);
             transform.position += transform.up * speed * Time.deltaTime;
         }
 
         else if (Input.GetKey(KeyCode.S))
         {
-            myAnimator.SetBool("IsWalking", true);
             transform.rotation = Quaternion.Euler(0, 0, 180);
             transform.position += transform.up * speed * Time.deltaTime;
-        }
-
-        else
-        {
-            myAnimator.SetBool("IsWalking", false);
         }
     }
 }

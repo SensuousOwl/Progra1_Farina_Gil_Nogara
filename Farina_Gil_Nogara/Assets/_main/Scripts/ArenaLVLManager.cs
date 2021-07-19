@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement; //Esto utiliza las funciones del administrado
 
 public class ArenaLVLManager : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
+    [SerializeField] private RobotController playerRobotController;
     [SerializeField] float levelResetDelay = .25f;
     [SerializeField] float levelLoadDelay = 2f;
 
@@ -36,7 +36,7 @@ public class ArenaLVLManager : MonoBehaviour
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        playerController.OnDead.AddListener(OnPlayerDeadHandler);
+        playerRobotController.OnDead.AddListener(OnPlayerDeadHandler);
     }
     private void OnPlayerDeadHandler()
     {

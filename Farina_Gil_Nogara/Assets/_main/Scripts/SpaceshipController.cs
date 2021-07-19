@@ -10,11 +10,24 @@ public class SpaceshipController : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     [SerializeField] private float shootCooldown = 0.5f;
 
+    public UnityEvent OnDead = new UnityEvent();
+
     private float currentCooldown;
 
+    private Rigidbody2D myRigidbody;
+    private HealthController myHealthController;
 
+    private void Awake()
+    {
+        myRigidbody = gameObject.GetComponent<Rigidbody2D>();
+        myHealthController = gameObject.GetComponent<HealthController>();
+        myHealthController.OnDead.AddListener(OnDeadHandler);
+    }
 
-
+    private void OnDeadHandler()
+    {
+        OnDead.Invoke();
+    }
 
     // Start is called before the first frame update
     void Start()
