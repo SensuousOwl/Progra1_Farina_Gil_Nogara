@@ -5,20 +5,13 @@ using UnityEngine.SceneManagement; //Esto utiliza las funciones del administrado
 
 public class NXTLVL : MonoBehaviour
 {
-    [SerializeField] float levelLoadDelay = 2f;
+    [SerializeField] private ArenaLVLManager levelManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FinishStateSequence();
-    }
-
-    private void FinishStateSequence()   
-    { 
-        Invoke("LoadNextScene", levelLoadDelay); //Esta funcion invoca a la funcion que carga al proximo nivel y le proporciona un delay asignado desde el editor.
-    }
-
-    void LoadNextScene()
-    {
-        SceneManager.LoadScene("World 1");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            levelManager.Victory();
+        }
     }
 }

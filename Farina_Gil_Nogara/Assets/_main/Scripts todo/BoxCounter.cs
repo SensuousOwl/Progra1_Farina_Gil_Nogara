@@ -8,17 +8,28 @@ public class BoxCounter : MonoBehaviour
     [SerializeField] private int boxesToWin = 4;
     [SerializeField] private BoxLVLManager levelManager;
 
-
-    /*private void OnTriggerStay2D(Collider2D collision)
+    private static int boxCount;
+    
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Box"))
         {
             levelManager.AddBox();
+            Debug.Log("Added 1 box");
         }
     }
 
-    private void Update()
+    
+    void Update()
     {
-        
-    }*/
+        boxCount = BoxLVLManager.currentBoxes;
+
+        if (boxCount == boxesToWin)
+        {
+            levelManager.Victory();
+        }
+    }
+    
+    
 }

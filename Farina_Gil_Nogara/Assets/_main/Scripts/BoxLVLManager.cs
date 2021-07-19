@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class BoxLVLManager : MonoBehaviour
 {
-    /*private int currentBoxes = 0;
+    [SerializeField] private string nextLevel;
+
+    public static int currentBoxes = 0;
 
     public void AddBox()
     {
@@ -15,8 +17,8 @@ public class BoxLVLManager : MonoBehaviour
     
     public void Victory()
     {
-        
-    }*/
+        SceneManager.LoadScene(nextLevel);
+    }
     public void Update()
     {
         if (Input.GetKey(KeyCode.R))
