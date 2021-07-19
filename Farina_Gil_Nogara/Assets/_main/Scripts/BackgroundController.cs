@@ -8,7 +8,8 @@ public class BackgroundController : MonoBehaviour
     public Rigidbody2D rb;
 
     private float width;
-    private float scrollSpeed = -2f;
+    [SerializeField] private float scrollSpeed = -2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class BackgroundController : MonoBehaviour
         collider.enabled = false;
 
         rb.velocity = new Vector2(scrollSpeed, 0);
+        ResetObsticle();
     }
 
     // Update is called once per frame
@@ -28,6 +30,11 @@ public class BackgroundController : MonoBehaviour
         {
             Vector2 resetPosition = new Vector2(width * 2f, 0);
             transform.position = (Vector2)transform.position + resetPosition;
+            ResetObsticle();
         }
+    }
+    void ResetObsticle()
+    {
+        transform.GetChild(0).localPosition = new Vector3(0, Random.Range(-4, 4), 0);
     }
 }
