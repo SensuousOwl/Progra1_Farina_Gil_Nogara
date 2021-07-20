@@ -8,6 +8,7 @@ public class EvilRobotDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Colision"+collision.gameObject.name);
         HealthController healthController = collision.gameObject.GetComponent<HealthController>();
 
         if (healthController == null)

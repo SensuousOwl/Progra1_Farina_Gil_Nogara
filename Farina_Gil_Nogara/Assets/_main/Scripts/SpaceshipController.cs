@@ -21,7 +21,7 @@ public class SpaceshipController : MonoBehaviour
     {
         myRigidbody = gameObject.GetComponent<Rigidbody2D>();
         myHealthController = gameObject.GetComponent<HealthController>();
-        //myHealthController.OnDead.AddListener(OnDeadHandler);
+        myHealthController.OnDead.AddListener(OnDeadHandler);
     }
 
     private void OnDeadHandler()

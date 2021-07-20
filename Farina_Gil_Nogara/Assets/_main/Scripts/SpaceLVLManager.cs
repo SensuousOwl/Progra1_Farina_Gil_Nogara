@@ -9,6 +9,7 @@ public class SpaceLVLManager : MonoBehaviour
     [SerializeField] float levelResetDelay = .25f;
     [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] private string nextWorld;
+    [SerializeField] private string gameOverScene;
 
     GameManager gameManager;
 
@@ -49,6 +50,6 @@ public class SpaceLVLManager : MonoBehaviour
 
     void ResetScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(gameOverScene);
     }
 }
