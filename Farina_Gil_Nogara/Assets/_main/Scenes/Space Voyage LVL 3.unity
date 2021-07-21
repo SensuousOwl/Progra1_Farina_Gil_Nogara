@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -395,7 +395,12 @@ PrefabInstance:
     - target: {fileID: 7240929670865933363, guid: d1223583e277d174fbd522c9f4e54395,
         type: 3}
       propertyPath: nextWorld
-      value: Main Menu
+      value: Demo End
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240929670865933363, guid: d1223583e277d174fbd522c9f4e54395,
+        type: 3}
+      propertyPath: gameOverScene
+      value: Game Over LVL 3
       objectReference: {fileID: 0}
     - target: {fileID: 7240929670865933363, guid: d1223583e277d174fbd522c9f4e54395,
         type: 3}

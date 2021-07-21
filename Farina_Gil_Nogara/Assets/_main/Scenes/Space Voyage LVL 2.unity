@@ -358,6 +358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7240929670865933363, guid: d1223583e277d174fbd522c9f4e54395,
         type: 3}
+      propertyPath: gameOverScene
+      value: Game Over LVL 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240929670865933363, guid: d1223583e277d174fbd522c9f4e54395,
+        type: 3}
       propertyPath: playerSpaceshipController
       value: 
       objectReference: {fileID: 1561060295}
