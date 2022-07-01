@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EvilRobotDamage : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
+    [SerializeField] private float damage = 10;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("Colision"+collision.gameObject.name);
         HealthController healthController = collision.gameObject.GetComponent<HealthController>();

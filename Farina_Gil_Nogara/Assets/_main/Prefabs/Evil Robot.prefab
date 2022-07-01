@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2280afae5ed81aa43a1565a4bbee84f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 1
 --- !u!212 &1232203612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -261,6 +261,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -350,6 +351,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -399,8 +401,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirX: 0
   moveSpeed: 3
-  xMax: 6.77
-  xMin: -2.8
   electricityTrigger: {fileID: 2737488236646098884}
   wallDetectionDist: 1
   wallDetectionPoint: {fileID: 3797941407661789708}

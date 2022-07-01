@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] private Button playButton;
     [SerializeField] private Button exitButton;
+    [SerializeField] private string nextLevel;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class MenuController : MonoBehaviour
 
     private void OnClickPlay()
     {
-        SceneManager.LoadScene("World 1");
+        SceneManager.LoadScene(nextLevel);
     }
 
     private void OnClickExit()

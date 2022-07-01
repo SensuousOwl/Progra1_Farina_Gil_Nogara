@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
-    public BoxCollider2D collider;
-    public Rigidbody2D rb;
+    private BoxCollider2D collider;
+    private Rigidbody2D rb;
 
     private float width;
     [SerializeField] private float scrollSpeed = -2f;
@@ -20,7 +20,7 @@ public class BackgroundController : MonoBehaviour
         collider.enabled = false;
 
         rb.velocity = new Vector2(scrollSpeed, 0);
-        ResetObsticle();
+        //ResetObsticle();
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class BackgroundController : MonoBehaviour
         {
             Vector2 resetPosition = new Vector2(width * 2f, 0);
             transform.position = (Vector2)transform.position + resetPosition;
-            ResetObsticle();
+            //ResetObsticle();
         }
     }
     void ResetObsticle()

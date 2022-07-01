@@ -5,12 +5,13 @@ using UnityEngine.Events;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private float maxHealth = 100;
 
     public UnityEvent OnHealthChange = new UnityEvent();
     public UnityEvent OnDead = new UnityEvent();
 
-    private int currentHealth;
+    private float currentHealth;
+    private bool canTakeDamage = true;
 
     private void Awake()
     {
@@ -23,10 +24,11 @@ public class HealthController : MonoBehaviour
         OnHealthChange.Invoke();
     }
 
-    public void GetDamage(int damage)
+    public void GetDamage(float damage)
     {
-        if (damage > 0)
+        if (damage > 0 && canTakeDamage)
         {
+            StartCoroutine(WaitForSeconds());
             currentHealth -= damage;
 
             if (currentHealth <= 0)
@@ -40,6 +42,12 @@ public class HealthController : MonoBehaviour
                 OnHealthChange.Invoke();
             }
         }
+    }
+    private IEnumerator WaitForSeconds()
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds (1);
+        canTakeDamage = true;
     }
 
     public float GetHealthPercentage()

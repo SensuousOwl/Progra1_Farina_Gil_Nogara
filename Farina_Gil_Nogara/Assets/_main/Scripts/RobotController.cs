@@ -6,9 +6,9 @@ using UnityEngine.Events;
 
 public class RobotController : MonoBehaviour
 {
-    [SerializeField] private float speed = 10;
-    [SerializeField] private float zRotation;
-    [SerializeField] private float boostForce = 5;
+    //[SerializeField] private float speed = 10;
+    //[SerializeField] private float zRotation;
+    //[SerializeField] private float boostForce = 5;
 
     public UnityEvent OnDead = new UnityEvent();
 
@@ -31,7 +31,7 @@ public class RobotController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             myRigidbody.AddForce(transform.up * boostForce, ForceMode2D.Impulse);
         }
@@ -58,6 +58,6 @@ public class RobotController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 180);
             transform.position += transform.up * speed * Time.deltaTime;
-        }
+        }*/
     }
 }
